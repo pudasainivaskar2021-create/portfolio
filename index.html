@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Forever Love</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cursive', sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px;
+      font-size: 3em;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 30px #ffdde1, 0 0 50px #ff758c; }
+    }
+
+    section {
+      padding: 50px;
+      margin: 30px auto;
+      width: 80%;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #ffe5ec;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    button {
+      background: #fff;
+      color: #ff758c;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 10px;
+    }
+
+    button:hover {
+      background: #ffdde1;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #e63946;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    💖 Our Forever Love 💖
+  </header>
+
+  <!-- Section 1: Intro -->
+  <section>
+    <h2>My Heartbeat</h2>
+    <p>Every beat of my heart whispers your name. Scroll down and discover our love story…</p>
+  </section>
+
+  <!-- Section 2: Gallery -->
+  <section>
+    <h2>Our Memories</h2>
+    <div class="gallery">
+      <img src="1.jpg" alt="Memory 1" width="1" height="500">
+      <img src="2.jpg" alt="Memory 2" width="1" height="500">
+
+      
+    </div>
+  </section>
+
+  
+  <!-- Section 4: Love Letter -->
+  <section>
+    <h2>My Promise</h2>
+    <p>
+      🌹 I promise to stand by you in every storm,  
+      to laugh with you in every sunshine,  
+      and to love you endlessly, today and always. 🌹
+    </p>
+  </section>
+
+  <footer>
+    Forever yours ❤️
+  </footer>
+
+  <script>
+    function playSong(song) {
+      let player = document.getElementById("player");
+      player.src = song;
+      player.play();
+    }
+  </script>
+</body>
+</html>
